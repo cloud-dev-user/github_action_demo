@@ -1,0 +1,18 @@
+name: Custom Action Demo
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      
+      - name: Execute Custom Action
+        id: custom-action
+        uses: ./ # Use the current directory as the location of your action
+        with:
+          message: "Hello from your custom action!"
+      
+      - name: Display Custom Action Output
+        run: echo "Custom Action Output: ${{ steps.custom-action.outputs.message }}"

@@ -2,7 +2,7 @@ name: 'Custom Action Demo'
 description: 'Prints a custom message in the workflow'
 inputs:
   message:
-    description: The message to print
+    description: 'The message to print'
     required: true
 outputs:
   message:

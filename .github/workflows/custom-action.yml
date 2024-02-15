@@ -10,7 +10,7 @@ jobs:
       
       - name: Execute Custom Action
         id: custom-action
-        uses: ./
+        uses: .\
         with:
           message: "Hello from your custom action!"
       

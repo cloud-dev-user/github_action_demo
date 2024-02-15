@@ -6,6 +6,7 @@ inputs:
     required: true
 outputs:
   message:
+    description: 'the output message'
 runs:
   using: 'node12'
   main: 'action.js'
